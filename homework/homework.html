@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Documents</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1>Random Number Game</h1>
+
+    <p class="input-max"></p>
+    <div class="input-range">
+      <input type="range" list="tickmarks" min="10" max="200" value="10" />
+
+      <datalist id="tickmarks">
+        <option value="50"></option>
+        <option value="100"></option>
+        <option value="150"></option>
+        <option value="200"></option>
+      </datalist>
+    </div>
+    <div>
+      <span>Guess the number</span>
+      <input
+        type="number"
+        min="1"
+        max="200"
+        maxlength="2"
+        style="width: 30px"
+        class="input-number"
+      />
+      <input
+        type="submit"
+        value="play!"
+        class="submitBtn"
+        onchange="handleSubmit()"
+      />
+    </div>
+    <div>
+      <span class="result"></span>
+      <h2 class="result-text"></h2>
+    </div>
+    <script src="homework.js"></script>
+  </body>
+</html>

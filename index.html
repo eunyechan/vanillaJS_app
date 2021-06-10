@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="all-box">
+      <div class="day-box">
+        <div class="js-day day">
+          <h1>Today</h1>
+        </div>
+        <div class="js-clock clock-box">
+          <h1>00:00</h1>
+        </div>
+      </div>
+
+      <div class="input-box">
+        <h4 class="js-greetings greeting"></h4>
+
+        <form class="js-form form">
+          <input
+            class="input-name"
+            type="text"
+            placeholder="What Is Your Name"
+            maxlength="12"
+          />
+        </form>
+
+        <form class="js-toDoForm">
+          <input
+            class="input-todo"
+            type="text"
+            placeholder="Write Your ToDoList"
+            maxlength="10"
+          />
+        </form>
+        <ol class="js-toDoList"></ol>
+      </div>
+
+      <span class="js-weather weather"></span>
+    </div>
+
+    <script src="clock.js"></script>
+    <script src="greeting.js"></script>
+    <script src="todo.js"></script>
+    <script src="bg.js"></script>
+    <script src="weather.js"></script>
+  </body>
+</html>
