@@ -11,6 +11,28 @@
   <body>
     <div class="all-box">
       <div class="day-box">
+        <div class="night">
+          <div class="shooting_star" style="margin: 17.5em -32.5em"></div>
+          <div class="shooting_star" style="margin: -27.625em 26.125em"></div>
+          <div class="shooting_star" style="margin: -12.5em 12.5em"></div>
+          <div class="shooting_star" style="margin: -16.25em 38em"></div>
+          <div class="shooting_star" style="margin: -38.25em 19.75em"></div>
+          <div class="shooting_star" style="margin: -25em 14.5em"></div>
+          <div class="shooting_star" style="margin: -16.5em 21em"></div>
+          <div class="shooting_star" style="margin: -17.5em 17.5em"></div>
+          <div class="shooting_star" style="margin: 26.5em -21.5em"></div>
+          <div class="shooting_star" style="margin: 3.5em 15.5em"></div>
+          <div class="shooting_star" style="margin: 21.5em -8.5em"></div>
+          <div class="shooting_star"></div>
+          <div class="shooting_star" style="margin: 2.5em -1.5em"></div>
+          <div class="shooting_star"></div>
+          <div class="shooting_star" style="margin: 26.5em -14.5em"></div>
+          <div class="shooting_star" style="margin: 8.5em -6em"></div>
+          <div class="shooting_star"></div>
+          <div class="shooting_star" style="margin: 26.5em -14.5em"></div>
+          <div class="shooting_star"></div>
+          <div class="shooting_star" style="margin: -6.5em 5.5em"></div>
+        </div>
         <div class="js-day day">
           <h1>Today</h1>
         </div>
@@ -31,15 +53,28 @@
           />
         </form>
 
-        <form class="js-toDoForm">
+        <form>
           <input
-            class="input-todo"
             type="text"
-            placeholder="Write Your ToDoList"
-            maxlength="10"
+            class="todo-input"
+            placeholder="Write Your ToDo List"
+            maxlength="12"
           />
+          <button class="todo-button" type="submit">
+            <i class="fas fa-plus-square"></i>
+          </button>
+          <div class="select">
+            <select name="todos" class="filter-todo">
+              <option value="all">All</option>
+              <option value="completed">Completed</option>
+              <option value="uncompleted">Uncompleted</option>
+            </select>
+          </div>
         </form>
-        <ol class="js-toDoList"></ol>
+
+        <div class="todo-container">
+          <ol class="todo-list"></ol>
+        </div>
       </div>
 
       <span class="js-weather weather"></span>
@@ -50,5 +85,7 @@
     <script src="todo.js"></script>
     <script src="bg.js"></script>
     <script src="weather.js"></script>
+
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
   </body>
 </html>
